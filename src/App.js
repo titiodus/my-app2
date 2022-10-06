@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Greetings from "./Components/greeting.js";
+import Forms from "./Components/form.js";
+import UserProfileCard from "./Components/ProfileCard.js";
+import Click from "./Components/increment.js";
+import MouseOver from "./Components/mouseover.js";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <section className="main-page">
+        <Greetings />
+        <MouseOver />
+        <UserProfileCard />
+      </section>
+
+      <section>
+        <Click />
+      </section>
+
+      <section>
+        <Forms />
+      </section>
+    </>
   );
 }
-
 export default App;
